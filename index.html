@@ -17,7 +17,10 @@
 		<title>Twitter Clone</title>
 	</head>
 	<body>
-		<section class="post-area">
+		<section
+			id="canvas"
+			class="post-area"
+		>
 			<div class="top">
 				<div>
 					<svg
@@ -141,6 +144,65 @@
 				</svg>
 			</div>
 		</section>
+		<button id="downloadBtn"
+			>Download</button
+		>
+
+		<section class="inputs-area">
+			<label for="display-pic">
+				Select an image
+			</label>
+			<input
+				type="file"
+				name="display-pic"
+				id="display-pic"
+				accept=".jpg, .jpeg, .png"
+			/>
+			<input
+				type="text"
+				placeholder="Display Name e.g. Habib Adebayo"
+			/>
+			<input
+				type="text"
+				placeholder="Profile Name e.g. @Habib__001"
+			/>
+			<textarea
+				name="post"
+				id="post-input"
+				cols="30"
+				rows="10"
+				placeholder="Enter your post content here..."
+			></textarea>
+			<input
+				type="text"
+				placeholder="Time e.g. 12:03"
+			/>
+			<input
+				type="text"
+				placeholder="Date e.g. 25 Mar 2024"
+			/>
+			<input
+				type="text"
+				placeholder="Views e.g. 10k"
+			/>
+			<input
+				type="text"
+				placeholder="Reposts e.g. 712"
+			/>
+			<input
+				type="text"
+				placeholder="Quotes e.g. 2.4K"
+			/>
+			<input
+				type="text"
+				placeholder="Likes e.g. 1.5M"
+			/>
+			<input
+				type="text"
+				placeholder="Bookmarks e.g. 76"
+			/>
+		</section>
+		<button class="update">Update</button>
 		<script src="./js/index.js"></script>
 	</body>
 </html>

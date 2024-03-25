@@ -1,7 +1,22 @@
-@mixin flex($flex, $justify, $align, $dir, $gap) {
+@mixin flex(
+	$flex,
+	$justify,
+	$align,
+	$dir,
+	$gap
+) {
 	display: $flex;
 	justify-content: $justify;
 	align-items: $align;
 	flex-direction: $dir;
 	gap: $gap;
+}
+
+@mixin grid($grid, $columns, $gap) {
+	display: $grid;
+	grid-template-columns: repeat(
+		$columns,
+		1fr
+	);
+	grid-gap: $gap;
 }
