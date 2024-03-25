@@ -1,0 +1,126 @@
+@import "partials/_reset.scss";
+@import "partials/_mixins.scss";
+
+.post-area {
+	background: $theme-dark;
+	color: $text-col;
+	width: 96%;
+	max-width: 480px;
+	margin: 50px auto 20px;
+	padding: 10px 14px;
+	.top {
+		@include flex(
+			flex,
+			start,
+			center,
+			row,
+			24px
+		);
+		padding-block: 10px;
+		p {
+			font-size: 1.2em;
+		}
+	}
+	.user-details {
+		@include flex(
+			flex,
+			space-between,
+			center,
+			row,
+			24px
+		);
+		.details {
+			@include flex(
+				flex,
+				start,
+				center,
+				row,
+				16px
+			);
+			img {
+				width: 50px;
+				object-fit: cover;
+				border-radius: 50%;
+			}
+		}
+		button {
+			background: $text-col;
+			color: $theme-dark;
+			padding: 8px 28px;
+			font-size: 1em;
+			font-weight: bold;
+			border-radius: 32px;
+		}
+	}
+	.post {
+		font-size: 1.1em;
+		padding: 10px 0;
+	}
+	.first-stat {
+		@include flex(
+			flex,
+			start,
+			center,
+			row,
+			4px
+		);
+		color: $theme-dark-white-text;
+		border-bottom: 1px solid
+			$theme-dark-border;
+		padding-bottom: 10px;
+		.time {
+			font-weight: 300;
+		}
+		.date {
+			font-weight: 300;
+		}
+		.views {
+			font-weight: 300;
+			strong {
+				font-weight: 700;
+				color: $text-col;
+				font-size: 1.05em;
+			}
+		}
+	}
+	.second-stat {
+		@include flex(
+			flex,
+			start,
+			center,
+			row,
+			20px
+		);
+		border-bottom: 1px solid
+			$theme-dark-border;
+		padding-block: 10px;
+		p {
+			font-weight: 300;
+			strong {
+				font-size: 1.05em;
+				font-weight: 700;
+			}
+		}
+	}
+	.bookmark {
+		border-bottom: 1px solid
+			$theme-dark-border;
+		padding-block: 10px;
+		font-weight: 300;
+		strong {
+			font-weight: 700;
+		}
+	}
+	.react {
+		@include flex(
+			flex,
+			space-between,
+			center,
+			row,
+			20px
+		);
+		border-bottom: 1px solid
+			$theme-dark-border;
+		padding-block: 10px;
+	}
+}
